@@ -7,7 +7,7 @@ Using the check-sequence-verify, the minimum amount of coins for the determinato
 % Using the "check sequence verify" there is no need for delay keeper stage and temp transaction and the minimum amount of coins used in the previous type.
 \begin{figure}[h]
   \centering
-  \includegraphics[width=\linewidth]{figures/bond-second.pdf}
+  \includegraphics[width=\linewidth]{figures/bond-second.png}
   \caption{The ABD component using checkseq. On each transaction, signatures, output amount and locktimes are specified. All outputs are in the same coin. Pink-bordered transactions are broadcast by Alice and blue-bordered ones by Bob. For locktimes, block height is used. Upper transactions are broadcast earlier than the lower ones. If there is a line between two transactions, then the source transaction is considered to be an input of the destination transaction.}
   \Description{An atomic bonded debt using checkseqverify}
   \label{fig:non-collat-bond}
@@ -48,5 +48,5 @@ The reason which prevents the intermediary ABD component to be used in a cross-c
   \label{fig:cross-chain-non-collat-bond}
 \end{figure}
 
-The difference between the intermediary ABD component and the ABCD primitive is addition of the guarantee withdrawal transaction. Whether Alice defaults or the bond is successfully executed, Bob has to broadcast the \new{\emph{guarantee withdrawal}} transaction. Other parts are the same in both procedures.
+The difference between the intermediary ABD component and the ABCD primitive is addition of the guarantee withdrawal transaction \new{and its related funding transactios}. Whether Alice defaults or the bond is successfully \new{repurchased}, Bob has to broadcast the \new{\emph{guarantee withdrawal}} transaction. \new{Additionally, in the case of not revealing the \Aone} \new{key, Bob can take back his guarantee.} Other parts are the same in both procedures.
 % The details of the ABCD is same as the intermediary ABD except for 
