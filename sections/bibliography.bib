@@ -1,4 +1,99 @@
-@online{1-compound,
+@article{liu2018atomic,
+  title={Atomic swaptions: cryptocurrency derivatives},
+  author={Liu, James A},
+  journal={arXiv preprint arXiv:1807.08644},
+  year={2018}
+}
+
+@inproceedings{herlihy2018atomic,
+  title={Atomic cross-chain swaps},
+  author={Herlihy, Maurice},
+  booktitle={Proceedings of the 2018 ACM symposium on principles of distributed computing},
+  pages={245--254},
+  year={2018}
+}
+
+@inproceedings{10.1145/3318041.3355460, author = {Han, Runchao and Lin, Haoyu and Yu, Jiangshan}, title = {On the Optionality and Fairness of Atomic Swaps}, year = {2019}, isbn = {9781450367325}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3318041.3355460}, doi = {10.1145/3318041.3355460}, abstract = {Atomic Swap enables two parties to atomically exchange their own cryptocurrencies without trusted third parties. This paper provides the first quantitative analysis on the fairness of the Atomic Swap protocol, and proposes the first fair Atomic Swap protocol with implementations.In particular, we model the Atomic Swap as the American Call Option, and prove that an Atomic Swap is equivalent to an American Call Option without the premium. Thus, the Atomic Swap is unfair to the swap participant. Then, we quantify the fairness of the Atomic Swap and compare it with that of conventional financial assets (stocks and fiat currencies). The quantification results show that the the Atomic Swap is much more unfair on cryptocurrencies than on stocks and fiat currencies in the same setting. Moreover, we use the conventional Cox-Ross-Rubinstein option pricing model in Finance to estimate the premium, and show that the estimated premium for cryptocurrencies is 2% ~ 3% of the asset value, while the premium for stocks and fiat currencies is approximately 0.3%. Furthermore, we propose two fair Atomic Swap protocols, one is for currency exchange and the other is for American Call Options. Our protocols are based on the original Atomic Swap protocol, but implement the premium mechanism. Blockchains supporting smart contracts such as Ethereum support our protocols directly. Blockchains only supporting scripts such as Bitcoin can support our protocols by adding a simple opcode. Finally, we provide the reference implementation of our protocols in Solidity, and give detailed instructions on implementing our protocols with Bitcoin script.}, booktitle = {Proceedings of the 1st ACM Conference on Advances in Financial Technologies}, pages = {62–75}, numpages = {14}, keywords = {Cross-Chain Transactions, Atomic Swap, Blockchain, American Call Option}, location = {Zurich, Switzerland}, series = {AFT '19} 
+}
+
+@misc{black2019atomic,
+    title={Atomic Loans: Cryptocurrency Debt Instruments},
+    author={Matthew Black and TingWei Liu and Tony Cai},
+    year={2019},
+    eprint={1901.05117},
+    archivePrefix={arXiv},
+    primaryClass={cs.CR}
+}
+
+@online{flashswaps,
+  author =       "Hayden Adams, Noah Zinsmeister, Dan Robinson",
+  year =         "2020",
+  title =        "Uniswap v2 Core",
+  url =          "https://uniswap.org/whitepaper.pdf",
+  month =        "March",
+  lastaccessed = "Sep 4, 2020",
+}
+
+@incollection{zie2019extending,
+  title={Extending Atomic Cross-Chain Swaps},
+  author={Zie, Jean-Yves and Deneuville, Jean-Christophe and Briffaut, J{\'e}r{\'e}my and Nguyen, Benjamin},
+  booktitle={Data Privacy Management, Cryptocurrencies and Blockchain Technology},
+  pages={219--229},
+  year={2019},
+  publisher={Springer}
+}
+
+@online{htlc-btctalk,
+  author =       "Tier Nolan",
+  year =         "2013",
+  title =        "Alt chains and atomic transfers. bitcointalk.",
+  url =          "https://bitcointalk.org/index.php?topic=193281.0",
+  month =        may,
+  lastaccessed = "Sep 4, 2020",
+}
+
+@misc{poon2016bitcoin,
+  title={The bitcoin lightning network: Scalable off-chain instant payments},
+  author={Poon, Joseph and Dryja, Thaddeus},
+  year={2016}
+}
+
+@online{jelly,
+  author =       "Krasimir Raykov, Tito Titov",
+  year =         "2019",
+  title =        "Jelly Swap Ecosystem",
+  url =          "https://github.com/jelly-swap/docs/blob/master/Jelly-Swap-Ecosystem.pdf",
+  lastaccessed = "Sep 5, 2020",
+}
+
+@online{uniswap,
+  author =       "Uniswap",
+  year =         "2018",
+  title =        "Automated Liquidity Protocol.",
+  url =          "https://uniswap.org",
+  lastaccessed = "Sep 4, 2020",
+}
+
+
+@online{aave,
+  author =       "Harry Thornburg",
+  year =         "2020",
+  title =        "AAVE protocol whitepaper V1",
+  url =          "https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf",
+  month =        jan,
+  lastaccessed = "Sep 4, 2020",
+}
+
+@online{maker,
+  author =       "Maker Team",
+  year =         "2017",
+  mounth =       "dec",
+  title =        "The Dai Stablecoin System",
+  url =          "https://makerdao.com/whitepaper/DaiDec17WP.pdf",
+  lastaccessed = "Sep 4, 2020",
+}
+
+@online{compound,
   author =       "Geoffrey Hayes, Robert Leshner",
   year =         "2019",
   mounth =       "feb",
@@ -7,7 +102,58 @@
   lastaccessed = "Sep 4, 2020",
 }
 
-@article{2-buterin2014next,
+@online{wbtc,
+  author =       "WBTC",
+  year =         "2019",
+  mounth =       "jun",
+  title =        "Wrapped Tokens A multi-institutional framework for tokenizing any asset",
+  url =          "https://wbtc.network/assets/wrapped-tokens-whitepaper.pdf",
+  lastaccessed = "Sep 4, 2020",
+}
+
+@online{dydx,
+  author =       "WBTC",
+  year =         "2017",
+  mounth =       "sep",
+  title =        "dYdX: A Standard for Decentralized Margin Trading and Derivatives",
+  url =          "https://whitepaper.dydx.exchange",
+  lastaccessed = "Sep 4, 2020",
+}
+
+@online{abcd-ref,
+  author =       "ABCD",
+  year =         "2020",
+  mounth =       "Nov",
+  title =        "Reference implementation for ABCD",
+  url =          "https://github.com/incentivus/ABCD",
+  lastaccessed = "Nov 7, 2020",
+}
+
+@inproceedings{van2019specification,
+  title={On the specification and verification of atomic swap smart contracts},
+  author={van der Meyden, Ron},
+  booktitle={2019 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)},
+  pages={176--179},
+  year={2019},
+  organization={IEEE}
+}
+
+@article{robinson2019atomic,
+  title={Atomic crosschain transactions for ethereum private sidechains},
+  author={Robinson, Peter and Hyland-Wood, David and Saltini, Roberto and Johnson, Sandra and Brainard, John},
+  journal={arXiv preprint arXiv:1904.12079},
+  year={2019}
+}
+
+@article{zakhary2019atomic,
+  title={Atomic commitment across blockchains},
+  author={Zakhary, Victor and Agrawal, Divyakant and Abbadi, Amr El},
+  journal={arXiv preprint arXiv:1905.02847},
+  year={2019}
+}
+
+
+@article{buterin2014next,
   title={A next-generation smart contract and decentralized application platform},
   author={Buterin, Vitalik and others},
   journal={white paper},
@@ -15,3 +161,42 @@
   number={37},
   year={2014}
 }
+
+@techreport{nakamoto2019bitcoin,
+  title={Bitcoin: A peer-to-peer electronic cash system},
+  author={Nakamoto, Satoshi},
+  year={2019},
+  institution={Manubot}
+}
+
+@INPROCEEDINGS{8835387,
+  author={A. {Zamyatin} and D. {Harz} and J. {Lind} and P. {Panayiotou} and A. {Gervais} and W. {Knottenbelt}},
+  booktitle={2019 IEEE Symposium on Security and Privacy (SP)}, 
+  title={XCLAIM: Trustless, Interoperable, Cryptocurrency-Backed Assets}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={193-210},}
+  
+
+
+@InProceedings{10.1007/978-3-030-54455-3_38,
+author="Deshpande, Apoorvaa
+and Herlihy, Maurice",
+editor="Bernhard, Matthew
+and Bracciali, Andrea
+and Camp, L. Jean
+and Matsuo, Shin'ichiro
+and Maurushat, Alana
+and R{\o}nne, Peter B.
+and Sala, Massimiliano",
+title="Privacy-Preserving Cross-Chain Atomic Swaps",
+booktitle="Financial Cryptography and Data Security",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="540--549",
+abstract="Recently, there has been a lot of interest in studying the transfer of assets across different blockchains in the form of cross-chain atomic swaps. Unfortunately, the current candidates of atomic swaps (hash-lock time contracts) offer no privacy; the identities as well as the exact trade that happened between any two parties is publicly visible.",
+isbn="978-3-030-54455-3"
+}
+

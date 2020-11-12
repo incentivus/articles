@@ -68,7 +68,7 @@
 
 %%
 %% end of the preamble, start of the body of the document source.
-
+\usepackage{color,soul}
 
 
 \newcommand{\ie}{{i.e. }}
@@ -76,9 +76,10 @@
 \newcommand{\etal}{et al. }
 \newcommand{\Ie}{{I.e. }}
 \newcommand{\Eg}{{E.g. }}
-%\newcommand{\new}[1]{\colorbox{yellow}{#1}}
-
 \newcommand{\new}[1]{#1}
+\newcommand{\newfateme}[1]{#1}
+
+% \newcommand{\new}[1]{#1}
 % \newcommand{\MetaSwaption}{{\it Meta Swaption }}
 \newcommand{\keyone} {{exercise }}
 \newcommand{\Aone} {{bond funding }}
@@ -204,7 +205,7 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-Inspired by the recent boom in \emph{decentralized finance} (DeFi) and the unprecedented success of flash loan projects in this ecosystem, we introduce a decentralized debt derivative named \emph{atomic bonded crosschain debt} (ABCD) to bridge the gap between the growth of lending protocols on Ethereum and other blockchains specifically Bitcoin. We think of ABCD as the alphabet of interoperability for DeFi and as a credit infrastructure which unlike the current protocols is not limited by requiring either smart contracts, over-collateralization, or instantaneous payback. 
+Inspired by the recent boom in \emph{decentralized finance} (DeFi) and the unprecedented success of flash loan projects in this ecosystem, we introduce a decentralized debt derivative named \emph{atomic bonded crosschain debt} (ABCD) to bridge the gap between the growth of lending protocols on Ethereum and other UTXO-based blockchains specifically Bitcoin. We think of ABCD as the alphabet of interoperability for DeFi and as a credit infrastructure which unlike the current protocols is not limited by requiring either smart contracts, over-collateralization, or instantaneous payback. 
 \end{abstract}
 
 %\begin{CCSXML}
@@ -322,7 +323,7 @@ Inspired by the recent boom in \emph{decentralized finance} (DeFi) and the unpre
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{blockchain; decentralized finance; DeFi; unsecured loan; HTLC}
+\keywords{blockchain; decentralized finance; DeFi; unsecured \new{bond}; HTLC}
 
 %% A "teaser" image appears between the author and affiliation
 %% information and the body of the document, and typically spans the
@@ -782,7 +783,8 @@ Inspired by the recent boom in \emph{decentralized finance} (DeFi) and the unpre
 %   citations: \cite{TUGInstmem, Thornburg01, CTANacmart}. Artifacts:
 %   \cite{R} and \cite{UMassCitations}.
 
-% \section{Acknowledgments}
+\section{Acknowledgments}
+We are particularly grateful for the assistance given by James Prestwich who helped us implement the ABCD.
 
 % Identification of funding sources and other support, and thanks to
 % individuals and groups that assisted in the research and the
