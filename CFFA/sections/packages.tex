@@ -1,0 +1,180 @@
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+
+\usepackage{url}
+%\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{floatrow}
+\usepackage{paralist}
+%\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage[center]{caption}
+\usepackage{float}
+\usepackage{csvsimple}
+\usepackage{rotating}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{enumitem}
+%\usepackage{cite}
+% \usepackage{lstlisting}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage[breaklinks]{hyperref}
+% \usepackage[ruled,vlined]{algorithm2e}
+%\usepackage{algorithmicx} 
+% \usepackage{algorithmic}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+%\usepackage{algcompatible}
+\usepackage{xspace}
+
+% \usepackage[center]{caption}
+% \usepackage{rotating}
+% \usepackage{subfig}
+\usepackage{subfig,etoolbox}% http://ctan.org/pkg/{subfig,etoolbox}
+\usepackage{lipsum}
+\usepackage{titlesec}
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+\makeatletter
+\AtBeginDocument{\patchcmd{\sf@subfloat}% <cmd>
+  {\maincaptiontopfalse}% <search>
+  {\maincaptiontoptrue}% <replace>
+  {}{}}% <success><failure>
+\makeatother
+\usepackage[dvipsnames]{xcolor}
+
+\makeatletter
+\newcommand{\printfnsymbol}[1]{%
+  \textsuperscript{\@fnsymbol{#1}}%
+}
+
+\makeatother
+
+% Add a period to the end of an abbreviation unless there's one
+% already, then \xspace.
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+%\usepackage{appendix}
+
+%\usepackage[showframe]{geometry} %for two column image
+
+\graphicspath{{./figures/}}
+%\usepackage{pifont}
+%\usepackage{graphicx,subfigure}
+%\usepackage{IEEEtrantools}
+%\usepackage{soul,color,
+%\usepackage{tikz}
+%\usepackage{authblk}
+%\usepackage{textcomp}
+%\usepackage{slashed}
+%\usepackage{booktabs}
+% \sethlcolor{yellow}
+%\usepackage{amsopn}
+%\usepackage{bbm}
+%\usepackage{algorithm,algcompatible}
+%\usepackage{algpseudocode}
+%\usepackage{csvsimple,booktabs,siunitx}
+%\usepackage{natbib}
+
+%\usepackage[numbers]{natbib}
+
+
+%\usepackage[inline]{enumitem}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}% http://tex.stackexchange.com/q/83169/576z4
+%\graphicspath{{img/}}
+%\usepackage{euscript}
+%\usepackage{eucal}
+%\usepackage
+%\usepackage{multirow}
+%\usepackage[pdftex]{hyperref}
+%\usepackage{lmodern}
+%\hypersetup{pdfmenubar=true,colorlinks=no}
+\newtheorem{theorem}{\bf Theorem}%[section]
+\newtheorem{lemma}{\bf Lemma}
+\newtheorem{claim}{Claim}
+\newtheorem{proposition}{\bf Proposition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{\bf Corollary}
+\newtheorem{definition}{\bf Definition}
+\newtheorem{fact}{\bf Fact}
+\newtheorem{example}{\bf Example}
+\newtheorem{discussion}{Discussion}
+\newtheorem{remark}{\bf Remark}
+\newtheorem{algorithmm}{\bf Algorithm}
+\newtheorem{assumption}{\bf Assumption}
+\def\p{{\rm P}}
+\newtheorem{experiment}{\bf Experiment}
+\def\p{{\rm P}}
+%\setlength{\topmargin}{-0.3in}
+%\setlength{\textwidth}{6in} % can be up to 6.5
+%\setlength{\textheight}{8.5in} 
+%\setlength{\evensidemargin}{-.4in}
+%\setlength{\oddsidemargin}{.3in}
+
+
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mbb}[1]{\mathbb{#1}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\newcommand{\tr}{\text{tr}}
+%\newcommand{\Pr}{\text{Pr}}
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\set}[1]{\mathcal{#1}}
+
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+\newcommand{\ie}{{i.e.}\@\xspace}
+\newcommand{\eg}{{e.g.}\@\xspace}
+\newcommand{\etal}{{et al.}\@\xspace}
+\newcommand{\Ie}{{I.e.}\@\space}
+\newcommand{\Eg}{{E.g.}\@\xspace}
+
+
+\newcommand{\MetaSwaption}{{meta swaption}\@\xspace}
+
+
+%\renewcommand{\S}{Section~}
+\newcommand{\Apn}[1]{{Appendix~#1}}
+
+\newcommand{\fatemeC}[1]{{\color{red}Comment by Fateme:} {\color{blue}#1}}
+\newcommand{\mojtabaC}[1]{{\color{red}Comment by Mojtaba:} {\color{blue}#1}}
+\newcommand{\ahC}[1]{{\color{red}Comment by Amirhossein:} {\color{blue}#1}}
+\newcommand{\melikaC}[1]{{\color{red}Comment by Melika:} {\color{blue}#1}}
+
+
+% Keys are defined here:
+\newcommand{\keyone} { \color{black}leader\@\xspace}
+\newcommand{\Aone} {\color{black}contract funding\@\xspace}
+\newcommand{\Atwo} { \color{black}master\@\xspace}
+\newcommand{\Delegation} { \color{black}delegation\@\xspace}
+
+
+\newcommand{\freeride} {{freeride}\@\xspace}
+
+\newcommand{\nodeal} {{nodeal}\@\xspace}
+
+\newcommand{\deal} {{deal}\@\xspace}
+
+\newcommand{\discount} {{discount}\@\xspace}
+
+\newcommand{\underwater} {{underwater}\@\xspace}
+
+\newcommand{\scdg} {{strongly-connected directed graph}\@\xspace}
+% \newcommand{\depsrc}{{ \color{VioletRed}{deposition-source} }}
+\newcommand{\SwaptionOwner}{{owner}\@\xspace}
+
+
+
+\newcommand{\genGraph} {\color{black} swaptions\@\xspace}
+\newcommand{\keyoneOk} {{protected}\@\xspace}
+\newcommand{\AtwoOk} {{integrated}\@\xspace}
